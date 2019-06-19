@@ -28,22 +28,25 @@ disappear.addEventListener("mouseenter", function(){
     this.style.visibility = "hidden"
 }); 
 
-// ----- Drag -----
+// ----- DragStart -----
 const dragPicture = document.querySelector(".intro img"); 
-dragPicture.addEventListener("drag", function(){
+dragPicture.addEventListener("dragstart", function(){
+dragPicture.setAttribute("src", "https://matteroffactsblog.files.wordpress.com/2013/08/despicable_me_2_minions-1920x1080.jpg")
+});
 
-})
+
+
 
 
 // ----- dblclick -----
-const clickContent = document.querySelector(".text-content"); 
+const clickContent = document.querySelector(".destination btn"); 
 
 clickContent.addEventListener('dblclick', function(event){
     clickContent.classList.toggle("large") 
 }) 
 
 
-
+// ----- Window Scroll -----
 window.addEventListener("scroll",() => {
     if(window.scrollY > 1000) {
         document.querySelector("body").style.background = "lightgreen";
@@ -53,3 +56,6 @@ window.addEventListener("scroll",() => {
         }), 3000;
     }
 }); 
+
+
+
