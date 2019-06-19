@@ -13,7 +13,7 @@ content.addEventListener("mouseover", function(event){
 // ----- Click -----
 const pickDestination = document.querySelector(".content-destination h2"); 
 pickDestination.addEventListener("click", event => {
-    pickDestination.textContent = "What am I doing with my life?"
+    pickDestination.textContent = "Coding is Awesome!"
 }); 
 
 const letsGo = document.querySelector(".content-section h2"); 
@@ -35,7 +35,11 @@ dragPicture.setAttribute("src", "https://matteroffactsblog.files.wordpress.com/2
 });
 
 
-
+// ----- DragImage -----
+let drag = querySelector(".content-destination img"); 
+drag.addEventListener("drag", function(){
+    drag.setAttribute("src", "img/destination.jpg")
+}); 
 
 
 // ----- dblclick -----
