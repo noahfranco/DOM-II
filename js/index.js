@@ -54,8 +54,10 @@ dragItem2.addEventListener("drag", function(){
 
 
 // ----- dblclick -----
-const clickContent = document.querySelector(".destination btn"); 
-
+const clickContent = document.querySelectorAll(".btn"); 
+clickContent.addEventListener("dblclick", () => {
+    clickContent.classList,toggle("large"); 
+}); 
 
 
 // ----- Window Scroll -----
