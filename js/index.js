@@ -28,6 +28,13 @@ disappear.addEventListener("mouseenter", function(){
     this.style.visibility = "hidden"
 }); 
 
+// ----- Drag -----
+const dragPicture = document.querySelector(".intro img"); 
+dragPicture.addEventListener("drag", function(){
+
+})
+
+
 // ----- dblclick -----
 const clickContent = document.querySelector(".text-content"); 
 
@@ -37,4 +44,12 @@ clickContent.addEventListener('dblclick', function(event){
 
 
 
-    
+window.addEventListener("scroll",() => {
+    if(window.scrollY > 1000) {
+        document.querySelector("body").style.background = "lightgreen";
+
+        setTimeout(function(){
+            document.querySelector("body").style.background = "white";
+        }), 3000;
+    }
+}); 
