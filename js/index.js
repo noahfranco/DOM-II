@@ -36,18 +36,21 @@ dragPicture.setAttribute("src", "https://matteroffactsblog.files.wordpress.com/2
 
 
 // ----- DragImage -----
-let drag = querySelector(".content-destination img"); 
-drag.addEventListener("drag", function(){
-    drag.setAttribute("src", "img/destination.jpg")
+const dragItem = document.querySelector(".content-destination img"); 
+dragItem.addEventListener("drag", function(){
+    dragItem.setAttribute("src", "https://cdn.pixabay.com/photo/2012/02/24/16/59/long-hair-16746_960_720.jpg"); 
 }); 
+
+const dragItem2 = document.querySelector(".img-content img"); 
+dragItem2.addEventListener("drag", function(){
+    dragItem2,setAttribute("src", "https://youdidwhatwithyourweiner.com/wp-content/uploads/2013/04/Karli-and-Serenaweb.jpg")    
+}); 
+
 
 
 // ----- dblclick -----
 const clickContent = document.querySelector(".destination btn"); 
 
-clickContent.addEventListener('dblclick', function(event){
-    clickContent.classList.toggle("large") 
-}) 
 
 
 // ----- Window Scroll -----
